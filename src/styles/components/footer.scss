@@ -1,0 +1,24 @@
+@import "../base/variables.scss";
+
+.footer {
+  width: 100%;
+  background: $grey100;
+
+  .wrapper {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 2rem 7.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__copyright {
+      font-size: 0.875rem;
+      font-weight: 300;
+      line-height: 1rem;
+      color: $background;
+    }
+  }
+}
