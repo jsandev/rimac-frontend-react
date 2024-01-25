@@ -41,5 +41,27 @@
         letter-spacing: 0.4px;
       }
     }
+
+    @media (max-width: $breakpoint-lg) {
+      padding: 2px 3rem;
+
+      &__call {
+        &--text {
+          display: none;
+        }
+      }
+    }
+
+    @media (max-width: $breakpoint-md) {
+      padding: 12px 1.5rem;
+
+      &__logo {
+        height: 32px;
+      }
+
+      &__call {
+        padding: 0;
+      }
+    }
   }
 }
