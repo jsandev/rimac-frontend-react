@@ -4,6 +4,8 @@ En este repositorio se utiliza el stack de React + Typescript para desarrollar e
 
 Se hace uso de Sass, utilizando la metodología BEM.
 
+Puedes acceder al link desplegado en: https://rimac-frontend-react.vercel.app/
+
 ## Run
 
 En caso de querer clonar el repositorio y probar localmente, haz lo siguiente:
