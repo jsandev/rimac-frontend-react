@@ -1,11 +1,13 @@
 import classNames from "classnames";
 
-import { useSelector } from "../store";
+import { useDispatch, useSelector } from "../store";
+import { navigationActions } from "../store/navigation";
 
 import LineDashed from "../assets/line-dashed.svg?react";
 import IconArrowLeft from "../assets/IconArrowLeft.svg?react";
 
 export const Breadcrumb = () => {
+  const disptach = useDispatch();
   const { currentStep } = useSelector((state) => state.navigation);
 
   return (
@@ -46,17 +48,15 @@ export const Breadcrumb = () => {
         </h3>
       </div>
 
-      {currentStep < 2 && (
-        <div className="breadcrumb__mobile">
-          <button>
-            <IconArrowLeft color="#a9afd9" />
-          </button>
-          <p>Paso 1 de 2</p>
-          <div className="progress">
-            <div />
-          </div>
+      <div className="breadcrumb__mobile">
+        <button onClick={() => disptach(navigationActions.previousStep())}>
+          <IconArrowLeft color="#a9afd9" />
+        </button>
+        <p>Paso {currentStep} de 2</p>
+        <div className="progress">
+          <div style={{ width: currentStep === 1 ? "50%" : "100%" }} />
         </div>
-      )}
+      </div>
     </>
   );
 };
