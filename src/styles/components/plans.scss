@@ -113,7 +113,7 @@
     align-items: center;
 
     .back {
-      margin-bottom: 110px;
+      margin-bottom: 56px;
       margin-top: 40px;
       display: flex;
       align-items: center;
@@ -308,6 +308,82 @@
       }
     }
 
+    .summary-container {
+      width: 100%;
+
+      .summary--title {
+        color: #141938;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 3rem;
+        letter-spacing: -0.6px;
+        margin-top: 32px;
+        margin-bottom: 48px;
+      }
+
+      .summary {
+        width: 100%;
+        background: white;
+        padding: 1.5rem 2rem;
+        border-radius: 24px;
+        box-shadow: 0px 1px 24px 0px rgba(174, 172, 243, 0.25);
+
+        h6 {
+          color: #141938;
+          font-size: 10px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: 16px;
+          letter-spacing: 0.8px;
+          text-transform: uppercase;
+        }
+
+        h1 {
+          color: #141938;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 1.75rem;
+          letter-spacing: -0.2px;
+
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+        }
+
+        .separator {
+          width: 100%;
+          height: 2px;
+          background: #d7dbf5;
+          margin: 1rem 0;
+        }
+
+        strong {
+          color: #141938;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 1.5rem;
+          letter-spacing: 0.2px;
+          margin-bottom: 4px;
+        }
+
+        span {
+          margin-bottom: 16px;
+        }
+
+        p {
+          color: #141938;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1.5rem;
+          letter-spacing: 0.1px;
+        }
+      }
+    }
+
     @media (max-width: $breakpoint-lg) {
       padding: 2rem 3rem 40px;
     }
@@ -320,7 +396,7 @@
       }
 
       &--title {
-        font-size: 1.75rem;
+        font-size: 28px;
         font-weight: 600;
         line-height: 2.25rem;
         letter-spacing: -0.2px;
@@ -349,6 +425,20 @@
 
         .plan {
           width: 100%;
+        }
+      }
+
+      .summary-container {
+        .summary--title {
+          color: #141938;
+          font-size: 2rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 2.5rem;
+          letter-spacing: -0.6px;
+          text-align: center;
+          margin-top: 0;
+          margin-bottom: 40px;
         }
       }
     }

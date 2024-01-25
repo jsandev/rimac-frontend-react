@@ -9,6 +9,7 @@ import IconProtectionLight from "../assets/IconProtectionLight.svg?react";
 import IconAddUserLight from "../assets/iconAddUserLight.svg?react";
 import IconHomeLight from "../assets/IconHomeLight.svg?react";
 import IconArrowLeft from "../assets/IconArrowLeft.svg?react";
+import Iconfamily from "../assets/Iconfamily.svg?react";
 
 interface IPlan {
   age: number;
@@ -68,10 +69,10 @@ export const Plans = () => {
           </button>
           <span>Volver</span>
         </div>
-        <h1 className="plans__container--title">
+        <h1 className="stepper__container--title">
           Rocío ¿Para quién deseas cotizar?
         </h1>
-        <h6 className="plans__container--subtitle">
+        <h6 className="stepper__container--subtitle">
           Selecciona la opción que se ajuste más a tus necesidades.
         </h6>
 
@@ -151,6 +152,25 @@ export const Plans = () => {
               </div>
             );
           })}
+        </div>
+
+        <div className="summary-container">
+          <h1 className="summary--title">Resumen del seguro </h1>
+          <div className="summary">
+            <h6>Precios calculados para:</h6>
+            <h1>
+              <Iconfamily /> Rocio Miranda Díaz
+            </h1>
+
+            <div className="separator" />
+
+            <strong>Responsable de pago</strong>
+            <p>DNI: 444888888</p>
+            <p>Celular: 5130216147</p>
+            <strong>Plan elegido</strong>
+            <p>Plan en Casa y Clínica</p>
+            <p>Costo del Plan: $99 al mes</p>
+          </div>
         </div>
       </div>
     </section>
