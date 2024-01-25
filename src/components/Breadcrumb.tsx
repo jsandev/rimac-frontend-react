@@ -39,7 +39,7 @@ export const Breadcrumb = () => {
         <h3
           className={classNames(
             "breadcrumb__title",
-            currentStep === 1 && "breadcrumb__title--selected"
+            currentStep === 2 && "breadcrumb__title--selected"
           )}
         >
           Resumen
